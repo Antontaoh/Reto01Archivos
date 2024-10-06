@@ -49,12 +49,6 @@ public class MovieFunctionality {
             String line;
             while ((line = br.readLine()) != null) {
                 String[] data = line.split(",");
-                System.out.println(data);
-                String id = data[0];
-                String title = data[1];
-                String year = data[2];
-                String director = data[3];
-                String genre = data[4];
                 var movie = new Movie();
                 movie.setId(data[0]);
                 movie.setTitle(data[1]);
